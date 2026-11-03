@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Learnify</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Learn<span>ify.</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="index.html#register" class="login-link">Sign In</a>
+            <a href="index.html#register" class="nav-button">
+                Get Started
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Contact Hero -->
+    <section class="inner-page-hero contact-hero">
+        <div class="inner-hero-content">
+            <span class="section-label">WE'RE HERE TO HELP</span>
+
+            <h1>Let's Start A <span>Conversation</span></h1>
+
+            <p>
+                Have a question about our courses or need assistance?
+                Get in touch with our team. We'd love to hear from you.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Contact Information Cards -->
+    <section class="contact-methods section-padding">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">GET IN TOUCH</span>
+                <h2>We'd Love To Hear From You</h2>
+                <p>Choose the easiest way to reach our team.</p>
+            </div>
+        </div>
+
+        <div class="contact-method-grid">
+
+            <div class="contact-method-card">
+                <div class="contact-method-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>Send us your questions and enquiries.</p>
+                <a href="mailto:hello@learnify.com">hello@learnify.com</a>
+            </div>
+
+            <div class="contact-method-card">
+                <div class="contact-method-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>Speak with our support team.</p>
+                <a href="tel:+910000000000">+91 00000 00000</a>
+            </div>
+
+            <div class="contact-method-card">
+                <div class="contact-method-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3>Our Location</h3>
+                <p>Find us at our office.</p>
+                <span>Mumbai, Maharashtra, India</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Form and Details -->
+    <section class="contact-main section-padding">
+
+        <div class="contact-main-content">
+
+            <span class="section-label">SEND US A MESSAGE</span>
+
+            <h2>How Can We Help You?</h2>
+
+            <p>
+                Whether you need help choosing a course, have a question
+                about your learning experience, or want to work with us,
+                fill out the form and tell us more.
+            </p>
+
+            <div class="contact-extra-info">
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <h4>Working Hours</h4>
+                        <p>Monday – Saturday</p>
+                        <p>9:00 AM – 6:00 PM</p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <h4>Student Support</h4>
+                        <p>We're here to help with your learning queries.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-follow">
+                <h3>Follow Us</h3>
+
+                <div class="contact-social-links">
+                    <a href="https://www.instagram.com/" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+
+            <h3>Send A Message</h3>
+            <p>Fill in the details below and we'll get back to you.</p>
+
+            <form action="#" method="post" class="learnify-contact-form">
+
+                <div class="contact-form-row">
+
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Your email" required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" placeholder="Enter subject" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="contact-topic">What Can We Help You With?</label>
+
+                    <select id="contact-topic" name="topic" required>
+                        <option value="">Select an option</option>
+                        <option value="course">Course Information</option>
+                        <option value="enrollment">Enrollment Support</option>
+                        <option value="technical">Technical Support</option>
+                        <option value="instructor">Become an Instructor</option>
+                        <option value="other">Other Enquiry</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="contact-message">Your Message</label>
+                    <textarea id="contact-message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+
+
+                <button type="submit" class="contact-submit-button">
+                    Send Message
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact CTA -->
+    <section class="contact-bottom-banner">
+
+        <div>
+            <span class="section-label">KEEP LEARNING</span>
+            <h2>Your Next Opportunity Starts With Learning.</h2>
+            <p>Explore our courses and take the next step in your journey.</p>
+        </div>
+
+        <a href="courses.html" class="primary-button">
+            Explore Courses
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Learn<span>ify.</span></a>
+                <p>Empowering learners with the knowledge and skills they need to build a better future.</p>
+
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">All Courses</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <a href="courses.html">Learning Paths</a>
+                <a href="index.html#register">Join Learnify</a>
+                <a href="contact.html">Help Center</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="fa-regular fa-envelope"></i> hello@learnify.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Mumbai, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LEARNIFY. ALL RIGHTS RESERVED.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

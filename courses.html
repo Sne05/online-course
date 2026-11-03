@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Courses | Learnify</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Learn<span>ify.</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="index.html#register" class="login-link">Sign In</a>
+            <a href="index.html#register" class="nav-button">
+                Get Started
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Courses Hero -->
+    <section class="inner-page-hero courses-hero">
+        <div class="inner-hero-content">
+            <span class="section-label">EXPLORE OUR COURSES</span>
+            <h1>Discover Your Next <span>Learning Adventure</span></h1>
+            <p>
+                Explore expert-led courses, develop valuable skills,
+                and take the next step towards your goals.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Course Categories -->
+    <section class="course-categories section-padding">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">FIND YOUR INTEREST</span>
+                <h2>Browse By Category</h2>
+                <p>Choose a subject and start learning something new.</p>
+            </div>
+        </div>
+
+        <div class="course-category-grid">
+
+            <a href="#development" class="course-category-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Development</span>
+            </a>
+
+            <a href="#business" class="course-category-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Business</span>
+            </a>
+
+            <a href="#design" class="course-category-item">
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>Design</span>
+            </a>
+
+            <a href="#data-science" class="course-category-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Data Science</span>
+            </a>
+
+            <a href="#marketing" class="course-category-item">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Marketing</span>
+            </a>
+
+            <a href="#photography" class="course-category-item">
+                <i class="fa-solid fa-camera"></i>
+                <span>Photography</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- All Courses -->
+    <section class="all-courses section-padding" id="all-courses">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">LEARN SOMETHING NEW</span>
+                <h2>Explore All Courses</h2>
+                <p>Discover courses designed to help you grow.</p>
+            </div>
+
+            <span class="course-count">12 COURSES AVAILABLE</span>
+        </div>
+
+
+        <!-- Search-style bar: visual only -->
+        <div class="course-search-bar">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for courses..." aria-label="Search courses">
+            </div>
+
+            <select aria-label="Sort courses">
+                <option>Most Popular</option>
+                <option>Newest</option>
+                <option>Top Rated</option>
+                <option>Price: Low to High</option>
+            </select>
+        </div>
+
+
+        <div class="course-listing-grid">
+
+            <!-- Course 1 -->
+            <article class="course-card" id="development">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700" alt="Web development">
+                    <span class="course-badge">Bestseller</span>
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Development</span>
+                    <h3>Complete Web Development Bootcamp</h3>
+                    <p class="instructor">By John Smith</p>
+                    <div class="course-rating">
+                        <strong>4.9</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(2,450)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 42 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 65 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹799 <del>₹2,499</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 2 -->
+            <article class="course-card" id="data-science">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700" alt="Data analytics">
+                    <span class="course-badge popular">Popular</span>
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Data Science</span>
+                    <h3>Data Analytics With Python & SQL</h3>
+                    <p class="instructor">By Emily Johnson</p>
+                    <div class="course-rating">
+                        <strong>4.8</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(1,820)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 36 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 52 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹899 <del>₹2,999</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 3 -->
+            <article class="course-card" id="design">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=700" alt="Graphic design">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Design</span>
+                    <h3>Graphic Design Masterclass</h3>
+                    <p class="instructor">By Sophia Williams</p>
+                    <div class="course-rating">
+                        <strong>4.7</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(1,560)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 28 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 40 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹699 <del>₹1,999</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 4 -->
+            <article class="course-card" id="business">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=700" alt="Business management">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Business</span>
+                    <h3>Business & Entrepreneurship Essentials</h3>
+                    <p class="instructor">By Michael Brown</p>
+                    <div class="course-rating">
+                        <strong>4.8</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(980)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 24 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 35 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹599 <del>₹1,799</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 5 -->
+            <article class="course-card" id="marketing">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700" alt="Digital marketing">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Marketing</span>
+                    <h3>Digital Marketing From Zero to Hero</h3>
+                    <p class="instructor">By David Wilson</p>
+                    <div class="course-rating">
+                        <strong>4.9</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(2,100)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 32 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 48 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹749 <del>₹2,199</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 6 -->
+            <article class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="Python programming">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Development</span>
+                    <h3>Python Programming For Beginners</h3>
+                    <p class="instructor">By Alex Carter</p>
+                    <div class="course-rating">
+                        <strong>4.8</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(1,760)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 30 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 44 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹649 <del>₹1,899</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 7 -->
+            <article class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700" alt="Digital illustration">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Design</span>
+                    <h3>Digital Illustration & Creative Design</h3>
+                    <p class="instructor">By Olivia Martin</p>
+                    <div class="course-rating">
+                        <strong>4.7</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(890)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 20 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 32 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹549 <del>₹1,599</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 8 -->
+            <article class="course-card" id="photography">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700" alt="Photography">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Photography</span>
+                    <h3>Professional Photography Masterclass</h3>
+                    <p class="instructor">By Daniel Lee</p>
+                    <div class="course-rating">
+                        <strong>4.9</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(1,340)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 26 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 38 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹699 <del>₹1,999</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 9 -->
+            <article class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="UI UX design">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Design</span>
+                    <h3>UI/UX Design From Beginner to Advanced</h3>
+                    <p class="instructor">By Rachel Green</p>
+                    <div class="course-rating">
+                        <strong>4.8</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(760)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 22 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 30 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹599 <del>₹1,799</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 10 -->
+            <article class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700" alt="Project management">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Business</span>
+                    <h3>Project Management Fundamentals</h3>
+                    <p class="instructor">By Robert Taylor</p>
+                    <div class="course-rating">
+                        <strong>4.7</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(650)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 18 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 26 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹499 <del>₹1,499</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 11 -->
+            <article class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="Artificial intelligence">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Data Science</span>
+                    <h3>Introduction to Artificial Intelligence</h3>
+                    <p class="instructor">By Kevin Adams</p>
+                    <div class="course-rating">
+                        <strong>4.9</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(1,120)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 34 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 45 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹899 <del>₹2,499</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Course 12 -->
+            <article class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=700" alt="Creative photography">
+                </div>
+                <div class="course-info">
+                    <span class="course-category">Photography</span>
+                    <h3>Creative Photography & Editing</h3>
+                    <p class="instructor">By Daniel Lee</p>
+                    <div class="course-rating">
+                        <strong>4.8</strong>
+                        <span class="stars">★★★★★</span>
+                        <span>(720)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 16 Hours</span>
+                        <span><i class="fa-solid fa-book-open"></i> 24 Lessons</span>
+                    </div>
+                    <div class="course-bottom">
+                        <h4>₹499 <del>₹1,499</del></h4>
+                        <a href="#all-courses" aria-label="View course"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="course-cta">
+        <h2>Not Sure Where To Start?</h2>
+        <p>Explore our learning paths and find a course that matches your goals.</p>
+        <a href="contact.html" class="primary-button">
+            Talk To Us
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Learn<span>ify.</span></a>
+                <p>Empowering learners with the knowledge and skills they need to build a better future.</p>
+
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">All Courses</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <a href="#all-courses">Learning Paths</a>
+                <a href="index.html#register">Join Learnify</a>
+                <a href="contact.html">Help Center</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="fa-regular fa-envelope"></i> hello@learnify.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Mumbai, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LEARNIFY. ALL RIGHTS RESERVED.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
